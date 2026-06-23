@@ -444,12 +444,3 @@ Principais Aprendizados
 * O Spark é uma engine de paralelismo.
 * O paralelismo é obtido através da divisão dos dados em partições.
 * O número ideal de partições depende do volume de dados e da capacidade do cluster.
-
-:::
-Depois de salvar, faça:
-```bash
-git add docs/spark_studies/001-fundamentos-iniciais-spark.md
-git commit -m "docs: documenta fundamentos iniciais de Spark"
-git push
-
-Esse será seu primeiro material de estudo oficial do projeto.
