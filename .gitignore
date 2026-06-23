@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Mac
+.DS_Store
+
+# Spark
+spark-warehouse/
+
+# Environment
+.venv/
+venv/
+
+# Data
+data/raw/*
+data/bronze/*
+data/silver/*
+data/gold/*
+data/feature_store/*
+data/monitoring/*
+
+!.gitkeep
