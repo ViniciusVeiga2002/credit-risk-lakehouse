@@ -17,7 +17,7 @@ erDiagram
     PROPOSTA_CREDITO ||--o| CONTRATO : pode_gerar
     CLIENTE ||--o{ CONTRATO : possui
     CONTRATO ||--o{ PARCELA : gera
-    PARCELA ||--o{ PAGAMENTO : recebe
+    PARCELA ||--o| PAGAMENTO : recebe
     CONTRATO ||--o| EVENTO_DEFAULT : pode_ter
 
     CLIENTE {
@@ -75,7 +75,7 @@ erDiagram
 
     PAGAMENTO {
         bigint pagamento_id PK
-        bigint parcela_id FK
+        bigint parcela_id FK, UK
         date data_pagamento
         decimal valor_pago
         string forma_pagamento
